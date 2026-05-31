@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="index, follow" />
 <meta name="color-scheme" content="dark" />
-<title>Small on purpose — Darkmont, LLC</title>
-<meta name="description" content="Why staying small isn't a limitation we're working around — it's the point." />
+<title>Before They Fixed Hubble’s Mirror, They Fixed It in Code — Darkmont, LLC</title>
+<meta name="description" content="Hubble launched with a flawed mirror. For three years, software reconstructed real science from the blur before astronauts could repair it." />
 <link rel="icon" type="image/png" href="favicon.png" />
 <link rel="apple-touch-icon" href="favicon.png" />
 <meta name="theme-color" content="#060709" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Small on purpose" />
-<meta property="og:description" content="Why staying small isn't a limitation we're working around — it's the point." />
-<meta property="og:image" content="hdr-small.png" />
+<meta property="og:title" content="Before They Fixed Hubble’s Mirror, They Fixed It in Code" />
+<meta property="og:description" content="Hubble launched with a flawed mirror. For three years, software reconstructed real science from the blur before astronauts could repair it." />
+<meta property="og:image" content="hdr-hubble.png" />
 <style>
   :root{
     --bg:#060709; --panel:#121316; --line:#232529; --line2:#2c2f34;
@@ -70,31 +70,31 @@
   </div>
 </div>
 
-<header class="hero" style="background-image:url('hdr-small.png')">
+<header class="hero" style="background-image:url('hdr-hubble.png')">
   <div class="hero-inner">
-    <span class="tag">Craft</span>
-    <h1>Small on purpose</h1>
-    <div class="byline">Darkmont · February 2026 · 2 min read</div>
+    <span class="tag">Science</span>
+    <h1>Before They Fixed Hubble’s Mirror, They Fixed It in Code</h1>
+    <div class="byline">Darkmont · August 2025 · 3 min read</div>
   </div>
 </header>
 
 <main class="wrap">
   <article>
-    <p class="lead">There's an assumption baked into how we talk about companies: that the goal is always to get bigger. More users, more features, more people, more markets. Growth is treated as the proof that something is working. Staying small, by contrast, is usually read as a phase you haven't grown out of yet.</p>
+    <p class="lead">When the Hubble Space Telescope opened its eye in 1990, the images came back blurred. The most expensive, most anticipated telescope ever built was, in a precise and humiliating sense, out of focus — and it was in orbit, hundreds of miles beyond the reach of anyone who could turn a screw.</p>
 
-    <p>We'd argue the opposite. For a certain kind of software, small isn't the thing you settle for. It's the thing you choose — and it's where the work gets good.</p>
+    <p>The flaw was in the main mirror. It had been ground with exquisite care to very slightly the wrong shape — too flat at its edge by a fraction the width of a human hair, an error far too small to see and far too large to ignore. Light striking the edge came to a focus in a different place than light striking the center, smearing every point of light into a soft halo. The telescope worked. It simply couldn’t focus.</p>
 
-    <p>Small means you can <b>pick projects on the merits</b>. A large company has mouths to feed — payroll, investors, quarterly targets — and those mouths decide what gets built whether anyone wanted it or not. A small one can build a thing simply because it should exist, take the time it takes, and stop when it's done. The absence of pressure to grow is itself a feature; it's what lets the work stay honest.</p>
+    <p>A repair was possible but years away: astronauts would eventually fly up and fit corrective optics over the instruments, like a pair of glasses. In the meantime, Hubble was the most powerful blurred telescope in history, and the data was still pouring down. The question was whether any of it could be used.</p>
 
-    <p>Small also means you can <b>stand behind what you ship</b>. When a handful of people build something, they know every corner of it. There's no department to blame, no system too big to understand, no feature nobody remembers adding. The person who made the thing is the person who answers for it. That accountability is hard to fake and easy to lose the moment a company gets big enough to hide inside itself.</p>
+    <p>It could — through software. Because the flaw was understood with great precision, the blur it produced could be described mathematically: every sharp point in the sky arrived at the sensor spread into a known, specific pattern. <b>And if you know exactly how an image was smeared, you can work partway back toward the sharp original.</b> The technique is called deconvolution — running the blur in reverse.</p>
 
-    <p>And small means you can <b>give each project real attention</b>. Scale forces breadth — a little effort spread across many things. Smallness allows depth — a lot of effort poured into a few. We'd rather do three things properly than thirty things thinly, and we think the people who use the work can feel the difference even when they can't name it.</p>
+    <p>It was not magic, and it was not perfect; you can never fully recover what the optics never cleanly recorded. But it was enough. For three years, before any astronaut touched the telescope, deconvolution algorithms pulled real science out of flawed light — sharpening Hubble’s crippled images well enough to keep the mission alive until the hardware fix arrived.</p>
 
-    <p>There are real trade-offs, and we won't pretend otherwise. Small is slower. It can't be everywhere at once. It turns down opportunities a bigger operation would grab without a second thought. But every one of those limits is the same limit that keeps the work focused — and we've found the trade easy to make.</p>
+    <p>There’s a subtlety that made the rescue possible at all. Deconvolution only works when the distortion is known with great precision — guess the blur wrong and you sharpen the image into nonsense, amplifying noise into detail that was never there. The astronomers could undo Hubble’s flaw only because they had measured it exactly. The cure depended entirely on the precision of the diagnosis.</p>
 
-    <p>Staying small isn't a constraint we're quietly working to escape. It's the shape of the company we actually want: close to the work, accountable for it, and free to build on the merits. The plan isn't to grow out of that. The plan is to stay in it.</p>
+    <p>It’s a small story with a large lesson. A physical defect, uncorrectable for years, was held at bay by understanding it precisely enough to undo much of it in arithmetic. Sometimes the most valuable thing you can know about a broken system is the exact shape of how it’s broken.</p>
 
-    <p class="endnote">It's the principle behind everything here — a small, deliberate slate of projects, each one ours end to end. <a href="index.html#about">More about how we work →</a></p>
+    <p class="endnote">That’s a habit we value — understanding a problem precisely enough to work with it, not just around it. <a href="index.html#about">More about how we work →</a></p>
   </article>
 </main>
 

@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="index, follow" />
 <meta name="color-scheme" content="dark" />
-<title>Small on purpose — Darkmont, LLC</title>
-<meta name="description" content="Why staying small isn't a limitation we're working around — it's the point." />
+<title>When Physics Started Rolling Dice — Darkmont, LLC</title>
+<meta name="description" content="Stuck on an equation they couldn’t solve, the physicists at Los Alamos taught computers to gamble. The modern simulation was born." />
 <link rel="icon" type="image/png" href="favicon.png" />
 <link rel="apple-touch-icon" href="favicon.png" />
 <meta name="theme-color" content="#060709" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Small on purpose" />
-<meta property="og:description" content="Why staying small isn't a limitation we're working around — it's the point." />
-<meta property="og:image" content="hdr-small.png" />
+<meta property="og:title" content="When Physics Started Rolling Dice" />
+<meta property="og:description" content="Stuck on an equation they couldn’t solve, the physicists at Los Alamos taught computers to gamble. The modern simulation was born." />
+<meta property="og:image" content="hdr-montecarlo.png" />
 <style>
   :root{
     --bg:#060709; --panel:#121316; --line:#232529; --line2:#2c2f34;
@@ -70,31 +70,29 @@
   </div>
 </div>
 
-<header class="hero" style="background-image:url('hdr-small.png')">
+<header class="hero" style="background-image:url('hdr-montecarlo.png')">
   <div class="hero-inner">
-    <span class="tag">Craft</span>
-    <h1>Small on purpose</h1>
-    <div class="byline">Darkmont · February 2026 · 2 min read</div>
+    <span class="tag">Science</span>
+    <h1>When Physics Started Rolling Dice</h1>
+    <div class="byline">Darkmont · November 2025 · 3 min read</div>
   </div>
 </header>
 
 <main class="wrap">
   <article>
-    <p class="lead">There's an assumption baked into how we talk about companies: that the goal is always to get bigger. More users, more features, more people, more markets. Growth is treated as the proof that something is working. Staying small, by contrast, is usually read as a phase you haven't grown out of yet.</p>
+    <p class="lead">Some problems in physics can be written as a neat equation and solved. Most cannot. By the 1940s, the physicists at Los Alamos had run hard into that wall: they needed to know how neutrons travel through material — scattering, bouncing, occasionally splitting an atom — and no formula they could write would give the answer. The solution they reached for was strange. They decided to let the computer gamble.</p>
 
-    <p>We'd argue the opposite. For a certain kind of software, small isn't the thing you settle for. It's the thing you choose — and it's where the work gets good.</p>
+    <p>The idea came to the mathematician Stanislaw Ulam, the story goes, while he was recovering from an illness and playing solitaire. He wondered what the odds were of winning a given layout, found the exact calculation hopeless — and realized he could simply deal the cards many times and count. The probability was unknowable by formula but easy to estimate by sampling.</p>
 
-    <p>Small means you can <b>pick projects on the merits</b>. A large company has mouths to feed — payroll, investors, quarterly targets — and those mouths decide what gets built whether anyone wanted it or not. A small one can build a thing simply because it should exist, take the time it takes, and stop when it's done. The absence of pressure to grow is itself a feature; it's what lets the work stay honest.</p>
+    <p>He and John von Neumann saw that a neutron’s path was the same kind of problem. You couldn’t solve for it, but you could simulate a single neutron — letting a stream of random numbers decide, at each step, whether it scattered, where it went, whether it split — and then do that thousands of times and watch the pattern that emerged. <b>Run enough random histories and their average reveals what the equation would not.</b></p>
 
-    <p>Small also means you can <b>stand behind what you ship</b>. When a handful of people build something, they know every corner of it. There's no department to blame, no system too big to understand, no feature nobody remembers adding. The person who made the thing is the person who answers for it. That accountability is hard to fake and easy to lose the moment a company gets big enough to hide inside itself.</p>
+    <p>Nicholas Metropolis gave it a name, after the casino at Monte Carlo where Ulam’s uncle once borrowed money to gamble. They ran the first versions on ENIAC, one of the earliest electronic computers. It was, in a real sense, the moment physics began using the computer not as a fast calculator but as a laboratory — a place to run experiments on mathematics itself.</p>
 
-    <p>And small means you can <b>give each project real attention</b>. Scale forces breadth — a little effort spread across many things. Smallness allows depth — a lot of effort poured into a few. We'd rather do three things properly than thirty things thinly, and we think the people who use the work can feel the difference even when they can't name it.</p>
+    <p>The method outgrew its origins almost immediately. Monte Carlo simulation is now everywhere a problem is too tangled to solve directly: in finance, in weather forecasting, in the way films render light, in the training of modern AI. Whenever a system has too many moving parts to follow by hand, the same trick applies — don’t solve it, sample it.</p>
 
-    <p>There are real trade-offs, and we won't pretend otherwise. Small is slower. It can't be everywhere at once. It turns down opportunities a bigger operation would grab without a second thought. But every one of those limits is the same limit that keeps the work focused — and we've found the trade easy to make.</p>
+    <p>What’s striking is how humble the core idea is. Faced with a problem too hard for cleverness, they didn’t find a cleverer formula. They accepted that they couldn’t, and let scale and randomness do the work instead. Sometimes the most powerful move in software is to stop trying to compute the exact answer and start trying to approximate it honestly.</p>
 
-    <p>Staying small isn't a constraint we're quietly working to escape. It's the shape of the company we actually want: close to the work, accountable for it, and free to build on the merits. The plan isn't to grow out of that. The plan is to stay in it.</p>
-
-    <p class="endnote">It's the principle behind everything here — a small, deliberate slate of projects, each one ours end to end. <a href="index.html#about">More about how we work →</a></p>
+    <p class="endnote">We like that instinct — reaching for the simple, honest method over the impressive one. It tends to age better. <a href="index.html#about">More about how we work →</a></p>
   </article>
 </main>
 
