@@ -88,6 +88,7 @@
   .card p{font-size:14.5px; color:#c7c9cf; line-height:1.6}
   .pill{font-size:11px; font-weight:600; letter-spacing:.03em; border-radius:999px; padding:5px 11px; white-space:nowrap; border:1px solid transparent}
   .pill.soon{color:#e7c87a; background:rgba(199,154,34,0.12); border-color:rgba(199,154,34,0.35)}
+  .pill.live{color:#bcd6ac; background:rgba(127,158,111,0.14); border-color:rgba(127,158,111,0.45)}
 
   .prose{max-width:720px}
   .prose p{font-size:16px; color:#cbcdd3; margin-bottom:16px; line-height:1.7}
@@ -101,7 +102,9 @@
   .app-head{display:flex; align-items:flex-start; gap:18px; margin-bottom:28px}
   .app-icon{width:66px; height:66px; border-radius:15px; border:1px solid var(--line2); flex:0 0 auto; display:block}
   .shots{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:16px; margin-top:30px; max-width:760px}
-  .shots img{width:100%; border-radius:18px; border:1px solid var(--line); display:block}
+  .shots img{width:100%; border-radius:18px; border:1px solid var(--line2); display:block}
+  .cta-row{display:flex; align-items:center; gap:16px; margin-top:28px; flex-wrap:wrap}
+  .appstore-badge{height:54px; width:auto; display:block}
   @media (max-width:560px){ .app-head{gap:14px} .app-icon{width:54px; height:54px} }
 
 
@@ -207,10 +210,13 @@
       <div class="card">
         <div class="card-top">
           <div><h3>ledro</h3><div class="role">Our first project · iPhone app</div></div>
-          <span class="pill soon">In development</span>
+          <span class="pill live">On the App Store</span>
         </div>
         <p>Ad-free, modern personal budgeting app for iPhone: no bank sync, no subscriptions, no data sharing. Easy monthly flow and net worth tracking.</p>
-        <a data-tab="ledro" style="margin-top:14px; font-size:13.5px; color:var(--sky); cursor:pointer; align-self:flex-start">View ledro →</a>
+        <div style="display:flex; align-items:center; gap:16px; margin-top:14px; align-self:flex-start">
+          <a data-tab="ledro" style="font-size:13.5px; color:var(--sky); cursor:pointer">View ledro →</a>
+          <a href="https://apps.apple.com/app/ledro-budget-no-bank-sync/id6776432208" style="font-size:13.5px; color:var(--sky); cursor:pointer">Download on the App Store →</a>
+        </div>
       </div>
     </div>
 
@@ -414,28 +420,24 @@
     <div class="prose">
       <p><b>ledro</b> is a private, on-device budgeting app. It's the kind of tool we wanted ourselves: a clear, honest way to see where your money goes month to month, without handing over your bank logins or trusting a server somewhere with your financial life.</p>
       <p>The design is deliberately small. A home view that shows where you stand, a monthly check-off for what's still pending, and a clean visual of how it all adds up — built around the way most people actually think about their money in practice.</p>
-      <p>We're building ledro as our first project because it's a problem we wanted solved well, and because it's a good test of how we want Darkmont to operate: take on something real, give it real attention, and ship when it's ready rather than when it's loud.</p>
+      <p>ledro is our first project because it's a problem we wanted solved well, and a test of how we want Darkmont to operate: take on something real, give it real attention, and ship when it's ready rather than when it's loud. <b>It's now on the App Store.</b></p>
     </div>
 
-    <!-- ============================================================
-         TODO — APP SCREENSHOTS (launch checklist #20)
-         Do this AS SOON AS we have the real screenshots (the same
-         ones we'll use on the App Store listing). Drop the PNGs into
-         darkmont_site/ (e.g. shot-1.png … shot-4.png), then UNCOMMENT
-         the block below and fix the filenames. Until then nothing
-         shows here, so the page never publishes with empty frames.
-    <div class="shots">
-      <img src="shot-1.png" alt="ledro — home" />
-      <img src="shot-2.png" alt="ledro — monthly flow" />
-      <img src="shot-3.png" alt="ledro — net worth" />
-      <img src="shot-4.png" alt="ledro — settings" />
+    <div class="cta-row">
+      <a href="https://apps.apple.com/app/ledro-budget-no-bank-sync/id6776432208" aria-label="Download ledro on the App Store"><img class="appstore-badge" src="app-store-badge.svg" alt="Download on the App Store" /></a>
     </div>
-         ============================================================ -->
+
+    <div class="shots">
+      <img src="shot-home.png" alt="ledro — home" />
+      <img src="shot-networth.png" alt="ledro — net worth" />
+      <img src="shot-pulse.png" alt="ledro — monthly flow" />
+      <img src="shot-stacks.png" alt="ledro — stacks" />
+    </div>
 
     <div class="values">
       <div class="value v1"><div class="vt">Private by design</div><div class="vd">Built to run entirely on your own device.</div></div>
       <div class="value v2"><div class="vt">Built in-house</div><div class="vd">Designed and developed by Darkmont — written, tested, and maintained by us.</div></div>
-      <div class="value v3"><div class="vt">In development</div><div class="vd">Active build through 2026. We'll release on the App Store when the work is ready.</div></div>
+      <div class="value v3"><div class="vt">Available now</div><div class="vd">On the App Store for iPhone — released when the work was ready, not before.</div></div>
     </div>
   </section>
 
